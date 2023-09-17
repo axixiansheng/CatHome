@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+<title>猫咪种类-Axi</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+
+<link rel="stylesheet" href="/css/index.css">
+
+
+
+<meta name="keywords" content="猫咪,历史,介绍,品种,">
+<meta name="description" content="用于介绍猫咪种类">
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+<script src="/js/index.js"></script>
+
+
+<script src="/js/fancybox.umd.js"></script>
+
+
+<script src="/js/fancybox-images.js"></script>
+
+
+<script src="/js/gitalk.min.js"></script>
+
+
+<script src="/js/hljs.min.js"></script>
+ 
+<script>hljs.highlightAll();</script>
+
+	<meta name="generator" content="Hexo 6.3.0"></head>
+
+	<body>
+		
+	<div class="header">
+		<div class="header-top" id="header-top">
+			<div class="h-left">
+				<a href="/">
+					<img src="/image/logo.png" alt="Quiet">
+				</a>
+			</div>
+			<div class="h-right">
+				<ul>
+					
+						
+								<li>
+									<a href="/">
+										HOME
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/archives">
+										ARCHIVE
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/categories">
+										CATEGORIES
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/tags">
+										TAGS
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/links">
+										LINKS
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/about">
+										ABOUT
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+				</ul>
+			</div>
+			<div class="h-right-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<path fill="none" d="M0 0h24v24H0z" />
+					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+    <div class="topo">
+        <h2>Axi</h2>
+    </div>
+    <ul>
+        
+        <li>
+            <a href="/">HOME</a>
+        </li>
+        
+        <li>
+            <a href="/archives">ARCHIVE</a>
+        </li>
+        
+        <li>
+            <a href="/categories">CATEGORIES</a>
+        </li>
+        
+        <li>
+            <a href="/tags">TAGS</a>
+        </li>
+        
+        <li>
+            <a href="/links">LINKS</a>
+        </li>
+        
+        <li>
+            <a href="/about">ABOUT</a>
+        </li>
+        
+    </ul>
+    <div class="my_foot">
+        
+        <a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">
+            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+        </a>
+        
+    </div>
+</div>
+<div class='shelter'>
+</div>
+<style>
+    .shelter{
+        background-color: #333;
+        opacity:0.5;
+        cursor: pointer;
+        display: none; 
+        position: fixed;
+        left: 0;
+        top: 0; 
+        right: 0;
+        bottom: 0;
+        z-index: 1998;
+    }
+    .sidebar {
+        width: 66%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        background: #fff;
+        z-index: 1999;
+        text-align: center;
+        box-shadow: -6px 0 20px rgba(98, 94, 94, .815);
+    }
+
+    .topo {
+        width: 100%;
+        height: 200px;
+        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end
+    }
+
+    .topo h2 {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        margin: 0 0 10px 10px;
+        font-size: 1.2em;
+        box-sizing: border-box
+    }
+
+    .topo:before {
+        content: '';
+        background-image: url(/image/pattern.png);
+        background-repeat: repeat;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1
+    }
+
+    .sidebar ul {
+        width: 100%;
+        margin-top: 50px
+    }
+
+    .sidebar ul li {
+        height: 50px;
+        list-style: none;
+        font-size: 1.2em;
+        text-align: right;
+        margin-right: 10px
+    }
+
+    .sidebar ul li a {
+        display: grid;
+        color: #5d606a;
+        text-overflow: ellipsis;
+        width: 100%;
+        text-decoration: none
+    }
+
+    .my_foot {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 0
+    }
+
+    .my_foot a {
+        text-decoration: none;
+        margin-right: 10px;
+        display: inline-block
+    }
+
+    .my_foot a img {
+        width: 30px;
+        height: 30px
+    }
+</style>
+
+<script>
+    $( function () {
+	$( '.h-right-close>svg' )
+		.click( function () {
+			$( '.sidebar' )
+				.animate( {
+					right: "0"
+				}, 500 );
+			$( '.shelter' )
+				.fadeIn( "slow" )
+		} );
+	$( '.shelter' )
+		.click( function ( e ) {
+			$( '.sidebar' )
+				.animate( {
+					right: "-100%"
+				}, 500 );
+			$( '.shelter' )
+				.fadeOut( "slow" )
+		} )
+} )
+
+</script>
+
+<div class="post">
+    <div class="post-header-background post-header-img"
+    style="background: url('https://tuapi.eees.cc/api.php?type=302&category=fengjing')" 
+>
+    <div class="post-header-background-content">
+        <ul class="post-header-tag">
+            
+            
+            <li><a href="/tags/猫咪">猫咪</a></li>
+            
+            <li><a href="/tags/历史">历史</a></li>
+            
+            <li><a href="/tags/介绍">介绍</a></li>
+            
+            <li><a href="/tags/品种">品种</a></li>
+            
+            
+        </ul>
+        
+        <h1>猫咪种类</h1>
+        <div class="post-header-info">
+            <div class="post-header-info-author">
+                
+                    <svg t="1604839279282" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="2901" width="20" height="20">
+                        <path
+                            d="M513 956.3c-247.7 0-448-200.3-448-448S265.3 66.2 513 66.2s448 200.3 448 448-200.3 442.1-448 442.1z m0-830.9c-212.2 0-388.8 170.7-388.8 388.8C124.2 726.3 294.9 903 513 903c212.2 0 388.8-170.7 388.8-388.8S725.2 125.4 513 125.4z m0 430.2c-94.2 0-170.7-76.5-170.7-170.7S418.8 207.8 513 207.8s170.7 76.5 170.7 170.7S607.2 555.6 513 555.6z m0-289.1c-64.6 0-112 52.8-112 112s47.4 117.9 112 117.9 112-52.8 112-112-47.4-117.9-112-117.9z m0 689.8c-135.7 0-259-58.7-341.9-158.9l-11.8-17.8 11.8-17.8c76.5-117.9 206.2-188.5 347.8-188.5 135.7 0 265 64.6 341.9 182.6l11.8 17.8-11.8 17.8C778 897.1 648.7 956.3 513 956.3zM230.3 773.2C300.9 849.7 406.9 897 513 897c112 0 218.1-47.4 288.6-129.8-70.5-88.2-170.7-135.6-282.7-135.6s-218.1 53.3-288.6 141.6z"
+                            p-id="2902" fill="#ffffff"></path>
+                    </svg>
+                    
+                <span class="post-header-info-author-text"> <a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">Axi</a></span>
+                <div class="post-header-info-author-categories">
+                    
+                         <a href="../../categories/种类介绍/" target="_blank" >种类介绍</a>
+                    
+                </div>
+                <p>2023-09-12 20:33:36</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="post-content" id="content">
+  
+  <div id="article" class="post-content-info">
+    
+
+    <p>当世界如繁星闪烁，每一个猫咪都是银河中的一颗宝石。🌟 在这个猫咪的奇妙星球上，你会发现不同种类的猫咪，每一种都有着独特的魅力和故事。✨</p>
+<h2 id="波斯猫"><a href="#波斯猫" class="headerlink" title="波斯猫"></a>波斯猫</h2><p><img src="https://img.zcool.cn/community/0117b85d3920a0a80120695c254a2f.jpg@2o.jpg"></p>
+<p><strong>历史：</strong></p>
+<p>波斯猫以它们起源的国家——波斯——命名，但是也有考古研究将这个品种猫的历史渊源推前到公元前1600多年。波斯猫是最早出现的猫展上的品种。从有记录开始，波斯猫就一直是人类最喜爱的猫咪品种之一。开创了维多利亚时代的维多利亚女王，据说就有两只蓝眼波斯猫。波斯猫的体型和性格决定了它们高贵的气质。</p>
+<p><strong>生理特征：</strong></p>
+<p>波斯猫是中大型的猫咪品种。它们身体较短呈方形，短腿，头很圆，尾巴粗短。眼睛又大又圆，像铜币一样。耳朵很小，圆耳尖，位置较低。鼻子很短，朝天，鼻子和额头之间有明显的凹陷。</p>
+<p>波斯猫的毛发很长，可以长到15厘米，显得雍荣华贵，头部被一圈厚实的颈毛环绕，脖子粗短，毛发顺着身体如流水一般触及地面，尾巴就像是一个厚羽毛掸子。</p>
+<p>波斯猫的毛比较容易打结，需要日常梳理。它们也很容易流眼泪，需要日常擦洗。</p>
+<p><strong>性格特点：</strong></p>
+<p>波斯猫甜美、温柔，它们喜欢安定的环境，并且喜欢被温柔的对待。它们不爱动、不爱玩耍、安静，主要靠它们的大眼睛来交流。它们不会过多地需要人的关注，能在家中独处，胆子比较小。</p>
+<h2 id="英国短毛猫"><a href="#英国短毛猫" class="headerlink" title="英国短毛猫"></a>英国短毛猫</h2><p><img src="https://img.zcool.cn/community/01aa1b5d4e2e14a80120695c1cb656.jpg@2o.jpg"></p>
+<p><strong>历史：</strong></p>
+<p>英国短毛猫有可能是最老的英国品种猫，它们的祖先可以追溯到罗马时代的家猫。它们早先以力量和捕猎能力著称。英国短毛猫起初是英国的街头流浪猫，但在育种者不断地优选下，形成了一个稳定的品种。</p>
+<p><strong>生理特征：</strong></p>
+<p>如果用一个词来形容英国短毛猫，那一定是“结实”。公猫体重大约在4-8公斤，母猫体重大约在3-5.5公斤。英国短毛猫到3岁时才会停止发育，寿命在15年左右。</p>
+<p>英国短毛猫被毛短、密致、有绒质手感。它们头很圆、鼻子比较短、脸颊饱满、圆形的胡须垫很突出。眼睛又大又圆。</p>
+<p>蓝色是英国短毛猫最经典的颜色，由于它异乎寻常的流行性，蓝色的英国短毛猫也被称为“蓝猫”。</p>
+<p><strong>性格特点：</strong></p>
+<p>英国短毛猫很常见，它们友好、友爱，不是特别粘人，但是也很享受人们的关心爱护。它们忠诚，但不喜欢待在人们腿上，他们更喜欢在沙发上挤在你边上，人们称之为“四只脚都在地上的猫”。它们比较安静，也不会乱跑乱跳，耐受小孩子和狗。它们不喜欢被抱来抱去。</p>
+<h2 id="俄罗斯蓝猫"><a href="#俄罗斯蓝猫" class="headerlink" title="俄罗斯蓝猫"></a>俄罗斯蓝猫</h2><p><img src="https://img.zcool.cn/community/0162c45ce78f59a80121a470abd43c.jpg@1280w_1l_2o_100sh.jpg"></p>
+<p><strong>历史：</strong></p>
+<p>俄罗斯蓝猫，又称蓝猫或蓝色俄罗斯猫，是一种拥有神秘起源的猫种。虽然它的确切起源存在争议，但俄罗斯蓝猫可以追溯到俄罗斯的寒冷地带，其历史可能可以上溯到19世纪。这一品种的猫在俄罗斯乡村被发现，其特点是灰蓝色的被毛和独特的外貌。</p>
+<p><strong>生理特征：</strong></p>
+<p>俄罗斯蓝猫是一种中等体型的猫，雄性体重通常在4.5-6.8公斤之间，雌性约为3.6-4.5公斤。最引人注目的特征是其浓密、短而柔软的被毛，呈现出独特的蓝灰色调，故得名“蓝猫”。这种被毛质地使它们看起来像穿着一件天鹅绒外套。</p>
+<p>俄罗斯蓝猫的头部呈圆形，眼睛大而杏仁形，颜色通常是明亮的绿色。耳朵中等大小，耳尖略为圆。鼻子略微凹陷，形成平直的额头。</p>
+<p><strong>性格特点：</strong></p>
+<p>蓝猫以其害羞而温和的性格而著称。它们通常对陌生人保持警觉，但对于主人和家庭成员表现出深厚的忠诚和依恋。尽管它们可能需要一些时间来适应新环境，但一旦建立了信任，蓝猫会展现出友好和亲人的一面。</p>
+<p>这一品种的猫通常不是很活跃，更喜欢悠闲的生活方式。它们对日常生活的适应能力强，不太需要过多的刺激和娱乐。蓝猫的声音通常是柔和的，不会发出响亮的叫声，更多时候是与主人轻声交流。</p>
+<h2 id="孟买猫"><a href="#孟买猫" class="headerlink" title="孟买猫"></a>孟买猫</h2><p><img src="https://img.zcool.cn/community/01e3695e342611a801216518f63d99.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100"></p>
+<p><strong>历史：</strong></p>
+<p>孟买猫，又称孟买折耳猫，源自印度的孟买城（Mumbai），是一种相对较新的猫种。它的历史可以追溯到20世纪，起源于印度孟买附近的街头流浪猫。孟买猫的特殊耳朵是其最显著的特征之一，这一品种经过多年的繁育和改良，才逐渐形成了今天我们所熟知的孟买猫。</p>
+<p><strong>生理特征：</strong></p>
+<p>孟买猫是中等到大型的猫，雄性体重通常在4.5-6.8公斤之间，雌性约为3.6-4.5公斤。最引人注目的特征是其独特的折耳，这种折耳是由一种基因突变引起的，使得它们的耳朵向前折叠，给予它们一种可爱的外貌。</p>
+<p>孟买猫的被毛短而光滑，毛色可以多样，包括棕色、灰色、白色、黑色等。它们的眼睛大而圆，颜色通常是金黄色或绿色。鼻子短小，鼻梁微微凹陷，头部呈圆形。</p>
+<p><strong>性格特点：</strong></p>
+<p>孟买猫以其友好和亲人的性格而著称。它们通常喜欢与家庭成员互动，对待孩子们尤为温和。这一品种的猫非常社交，喜欢在家中扮演陪伴者的角色。与孟买猫相处，你会发现它们非常聪明，容易训练，甚至可以学会一些小技巧。</p>
+<p>尽管孟买猫有着友好的性格，但它们也非常活跃，喜欢玩耍和锻炼。它们的好奇心强，会在家中寻找新鲜刺激。孟买猫的声音通常是柔和的，不会发出刺耳的叫声。</p>
+<h2 id="暹罗猫"><a href="#暹罗猫" class="headerlink" title="暹罗猫"></a>暹罗猫</h2><p><img src="https://img.zcool.cn/community/0197de5d565ddfa8012187f4a0ac74.jpg@2o.jpg"></p>
+<p><strong>历史：</strong></p>
+<p>暹罗猫最早的记录是1350年的一份手稿，上面描述了一只身体白色、面部、尾巴、脚和耳朵呈黑色的猫。暹罗猫在19世纪末期从泰国出口到世界各地，当时泰国被称为暹罗。</p>
+<p><strong>生理特征：</strong></p>
+<p>暹罗猫有着长管状的身体、长腿、细尖的尾巴。脸很长、呈三角形，有着硕大的三角形耳朵。暹罗猫的眼睛十分有特点，呈杏仁状，有着深蓝色，向上倾斜。它们有着又长又直的鼻子。</p>
+<p>暹罗猫毛发短、有光泽、光滑、紧贴身体。</p>
+<p>暹罗猫起初只有海豹色，随后蓝色、巧克力色和浅紫色也被赛事接受。在70年代，出现了虎斑、红色和奶油色斑点暹罗。90年代左右又出现了银色虎斑和烟熏斑。</p>
+<p><strong>性格特点：</strong></p>
+<p>暹罗猫对于需要很多互动和活动的主人来说是非常好的宠物。它们和其它宠物和孩子都能相处得很好。它们友爱、忠诚、粘人、非常需要人的关注。它们很喜欢玩耍、非常喜欢叫，需要花费很多的时间和精力去照顾它们。</p>
+<h2 id="伯曼猫"><a href="#伯曼猫" class="headerlink" title="伯曼猫"></a>伯曼猫</h2><p><img src="https://image.baidu.com/search/down?url=https://tvax1.sinaimg.cn/large/ea98bce0gy1hafytcvi28j22yo1o0b29.jpg"></p>
+<p><strong>历史：</strong></p>
+<p>伯曼猫，又称缅甸猫或圣山猫，是一种拥有神秘起源的猫种。其传说可以追溯到缅甸的寺庙和传说中的神圣传承。伯曼猫的历史距今已有数百年，但直到20世纪中期，这一品种的猫才首次被引入西方国家。伯曼猫的特殊特征和优雅外貌使其成为了备受欢迎的宠物。</p>
+<p><strong>生理特征：</strong></p>
+<p>伯曼猫是一种中型到大型的猫，雄性的体重通常在5.5-7.7公斤之间，雌性稍轻，约为4.5-5.5公斤。最引人注目的特征之一是它们的被毛，具有中等长度，呈现出浓密而丰盈的质地。伯曼猫的被毛通常是奶油色，但其脸部、耳朵、尾巴和脚部显示出深色的标志性点缀，形成了一种独特的外貌。</p>
+<p>它们的头部呈圆形，眼睛大而明亮，颜色通常是深蓝色。伯曼猫的耳朵中等大小，耳尖略为圆。尾巴中等长度，尾巴上的毛发浓密。</p>
+<p><strong>性格特点：</strong></p>
+<p>伯曼猫以其友好、温和和亲人的性格而著称。它们通常非常依恋主人，喜欢被抱在怀里和与人互动。这一品种的猫非常聪明，善于理解主人的情感，经常成为家庭中的知己。</p>
+<p>伯曼猫虽然友好，但它们也非常活跃，喜欢玩耍和锻炼。它们喜欢与家庭成员一起参与游戏，但也需要一些独立的时间来休息和冥想。伯曼猫的声音通常是柔和的，不会发出响亮的叫声。</p>
+<h2 id="布偶猫"><a href="#布偶猫" class="headerlink" title="布偶猫"></a>布偶猫</h2><p><img src="https://img.zcool.cn/community/01395a5d392220a80120695c04eda8.jpg@1280w_1l_2o_100sh.jpg"></p>
+<p><strong>历史：</strong></p>
+<p>布偶猫在20世纪60年代由Ann Baker率先培育。布偶猫的祖先几乎全是流浪猫。Ann将一只她收养的白色长毛母猫和她其它收养的猫配种，这只母猫的后代有着异乎寻常的安静性格，当她抱着它们的时候，有一些就像布偶一样松松垮垮地挂在她的胳膊上。经过毛色等外貌的筛选，她发明了布偶这个品种。</p>
+<p><strong>生理特征：</strong></p>
+<p>布偶猫体型较大、慵懒、毛发中等长度。公猫体重可达7-10公斤，母猫体重可达4.5-7公斤。公猫体长可以超过1米（含尾巴）。</p>
+<p>布偶猫有着迷人的、且微向上扬起的蓝色眼睛。头部呈等边三角形，耳朵中等大小，两只耳朵距离较远，耳尖且向前倾。鼻子中等长度。</p>
+<p>布偶猫是一个重点色的品种（重点色——身体的颜色比重点位置（脸、腿、尾巴、耳朵）的颜色要浅），分三个品种：重点色（colorpoint）、bicolor（双色）和mitted（戴手套——腿上只有脚是白色的）。每个品种都有海豹色、蓝色、巧克力色、浅紫色、月桂色、浅黄褐色、红色、奶油色，也可以附加有玳瑁、山猫或虎斑纹。</p>
+<p>布偶猫算是比较晚熟的品种，一般最早3岁，最晚4-5岁才可以算发育完全。</p>
+<p><strong>性格特点：</strong></p>
+<p>布偶猫放松、开心、就像小孩子的玩偶一样。它们友爱、安静、看起来比较懒散。它们不是很活跃、也不太爱叫。布偶猫以它们的忍受力著称，它们能忍受穿上衣服，并且被抱着走动，不会反抗。因为它们的友好和聪慧，它们经常被拿到与狗进行类比。</p>
+<h2 id="美国短毛猫"><a href="#美国短毛猫" class="headerlink" title="美国短毛猫"></a>美国短毛猫</h2><p><img src="https://img.zcool.cn/community/017e915ce76af9a8012141685bf967.jpg@1280w_1l_2o_100sh.jpg"></p>
+<p><strong>历史：</strong></p>
+<p>美国短毛猫在1906年被承认。它们起初被命名为“本土短毛猫（Domestic Shorthair）”。它们乘坐五月花号船随着欧洲移民一起来到北美大陆，用以捕捉船舱中的老鼠，是一种纯天然进化过来的功能型猫咪。在人类长期的育种优选下，培育出了稳定的品种。</p>
+<p><strong>生理特征：</strong></p>
+<p>公猫体重大约在5-7公斤，母猫体重大约在3-5.5公斤。美国短毛猫到3、4岁时才会停止发育，寿命在15年左右。没有英国短毛猫那么“敦实”。</p>
+<p>眼睛间距较宽，上眼睑的形状像半个杏仁、下眼睑有着半圆形的曲线，眼睛不像异国短毛猫（加菲猫，见下文）那么圆，且微微上挑。口鼻较短，有着强健的下巴，所以整个脸型有点方。耳朵中等大小，耳尖呈圆形，双耳尖的间距大约是眼睛间距的两倍。</p>
+<p>美国短毛猫的毛比较硬。最经典的颜色就是银色虎斑纹和棕色虎斑纹。</p>
+<p><strong>性格特点：</strong></p>
+<p>美国短毛猫天性良善、随和、在家庭中很受欢迎。它们耐受小孩子，可以表现得十分沉着冷静。母猫往往比公猫更加活泼，而公猫性格往往更加随和。总体上看，它们非常聪明，并对周边事物都很感兴趣。很多美国短毛猫会捕猎入侵家中的昆虫。它们也喜欢从窗台上看外面的鸟和其它活物。它们喜爱人们的陪伴，但是也需要有自己独立的空间。有一些美短喜爱趴在人们腿上，也有一些更倾向于蜷缩在人们附近。</p>
+<h2 id="缅因猫"><a href="#缅因猫" class="headerlink" title="缅因猫"></a>缅因猫</h2><p><img src="https://img.zcool.cn/community/01585a5d390c77a80120695c3e2e4c.jpg@2o.jpg"></p>
+<p><strong>历史：</strong></p>
+<p>缅因猫，又被称为缅因库恩猫，是一种源自美国缅因州的猫种。尽管它们的起源有很多传说，但直到今天，缅因猫仍然是美国猫种中的一颗明珠。缅因猫的发展和繁育主要发生在19世纪末和20世纪初。</p>
+<p><strong>生理特征：</strong></p>
+<p>缅因猫是一种大型猫，雄性的体重通常在6.8-9公斤以上，雌性也较大，约为4.5-6.8公斤。最引人注目的特点之一是它们强壮而结实的体格。缅因猫的被毛中等长度，质地浓密，能很好地抵御寒冷气候。</p>
+<p>它们的头部呈中等大小，眼睛大而圆，颜色通常是金黄色或绿色。耳朵中等大小，耳尖略为圆。尾巴中等长度，尖端略圆。</p>
+<p><strong>性格特点：</strong></p>
+<p>缅因猫以其友善、亲人和聪明的性格而著称。它们对待家庭成员非常依恋，喜欢与人互动，尤其是与儿童。这一品种的猫通常非常聪明，容易学会各种技巧和把戏，喜欢挑战智力玩具和解谜游戏。</p>
+<p>缅因猫也是一种好奇心强的猫，喜欢探索和玩耍。尽管它们具有强壮的体格，但它们通常不是很活跃，更喜欢悠闲的生活方式。与其他宠物和家庭成员相处，缅因猫表现出友好和和平的特点。</p>
+<h2 id="金吉拉猫"><a href="#金吉拉猫" class="headerlink" title="金吉拉猫"></a>金吉拉猫</h2><p><img src="https://img.zcool.cn/community/01977b5ce75175a801208f8beece0e.jpg@2o.jpg"></p>
+<p><strong>历史：</strong></p>
+<p>金吉拉猫，又称金吉拉或金吉拉雪貂，是一种相对较新的猫种，其起源可以追溯到美国。这一品种的猫具有独特的外貌和个性，是通过对波斯猫和伯曼猫等品种进行交配而培育出来的。</p>
+<p><strong>生理特征：</strong></p>
+<p>金吉拉猫是一种中等到大型的猫，雄性体重通常在5.4-7.7公斤之间，雌性约为4.5-5.4公斤。最引人注目的特点之一是它们浓密而柔软的被毛，被毛质地非常细腻，毛色通常呈金色或浅棕色，故得名“金吉拉”。其被毛贴身且有光泽，给予金吉拉猫一种奢华的外观。</p>
+<p>金吉拉猫的头部呈圆形，眼睛大而圆，颜色通常是明亮的蓝色或绿色。耳朵小而圆，尾巴中等长度，尖端略为圆。</p>
+<p><strong>性格特点：</strong></p>
+<p>金吉拉猫以其温和、友好和亲人的性格而著称。它们非常喜欢与家庭成员互动，对待儿童友好，也容易与其他宠物相处。这一品种的猫通常非常聪明，容易训练，可以学会各种把戏和技巧。</p>
+<p>尽管金吉拉猫有着友好的性格，但它们也很活跃，喜欢玩耍和锻炼。它们的好奇心强，喜欢在家中探索新鲜事物。金吉拉猫的声音通常是柔和的，不会发出响亮的叫声，更多时候是与主人轻声交流。</p>
+<h2 id="待添加"><a href="#待添加" class="headerlink" title="待添加"></a>待添加</h2><p>……</p>
+
+  </div>
+  <div id=""></div>
+</div>
+
+<script>
+  
+Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
+  dragToClose: true,
+  Toolbar: true,
+  closeButton: "top",
+  Image: {
+    zoom: true,
+  },
+  on: {
+    initCarousel: (fancybox) => {
+      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+    "Carousel.change": (fancybox, carousel, to, from) => {
+      const slide = carousel.slides[to];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+  },
+});
+</script>
+
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 9999;
+        /* width: 600px !important; */
+        min-width: 0%;
+        max-width: 90%;
+        max-height: 80%;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
+
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            max-width: 88%
+        }
+    }
+</style>
+
+    <div class="post-paging">
+    
+
+    
+    <a href="/2023/09/12/Educating/">
+        <div class="post-paging-next">
+            <span>下一篇</span>
+            <p>科学养猫</p>
+        </div>
+    </a>
+    
+</div>
+</div>
+		
+<div class="footer">
+	<div class="Copyright">
+		©2023 By Axi. 主题：<a
+			style="text-decoration: none;display: contents; color: #898F9F;"
+			target="_blank" rel="noopener" href="https://github.com/79e/hexo-theme-quiet">Quiet</a>
+	</div>
+	<div class="contact">
+		
+		<a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">
+			<img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+		</a>
+		
+	</div>
+</div>
+
+<script src="/js/gotop.js"></script>
+
+
+<style type="text/css">
+    @media screen and (min-width: 600px) {
+        .goTop>span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            opacity: 0.8;
+            background: rgba(18, 24, 58, 0.06);
+            text-align: center;
+            transition: border .5s;
+            border: 1px solid rgba(18, 24, 58, 0.06);
+
+            -moz-transition: border .5s;
+            /* Firefox 4 */
+            -webkit-transition: border .5s;
+            /* Safari 和 Chrome */
+            -o-transition: border .5s;
+            /* Opera */
+        }
+
+        .goTop>span:hover {
+            border: 1px solid #6680B3;
+        }
+
+
+        .goTop {
+            position: fixed;
+            right: 30px;
+            bottom: 80px;
+        }
+
+        .goTop>span>svg {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .goTop {
+            display: none;
+        }
+    }
+</style>
+<div class="goTop" id="js-go_top">
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g>
+                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
+            </g>
+        </svg>
+    </span>
+</div>
+<script>
+    $( '#js-go_top' )
+	.gotoTop( {
+		offset: 500,
+		speed: 300,
+		animationShow: {
+			'transform': 'translate(0,0)',
+			'transition': 'transform .5s ease-in-out'
+		},
+		animationHide: {
+			'transform': 'translate(100px,0)',
+			'transition': 'transform .5s ease-in-out'
+		}
+	} );
+</script>
+
+
+    <!-- Gitalk -->
+    <script>
+        const data = '{"clientID":"02b3c","clientSecret":"adfc7b4","repo":"gimment","owner":"duneng","admin":"duneng"}'
+        const gitalk = new Gitalk({
+            ...JSON.parse( data),
+            id:location.pathname,
+            distractionFreeMode:false
+        })
+        
+        if(Boolean('false')){
+            gitalk.render('gitalk-container')
+        }
+    </script>
+
+<script>
+	console.log('\n %c Hexo-Quiet 主题 %c https://github.com/79e/hexo-theme-quiet \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;')
+</script>
+	</body>
+</html>
+

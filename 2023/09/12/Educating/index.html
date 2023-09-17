@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+<title>科学养猫-Axi</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+
+<link rel="stylesheet" href="/css/index.css">
+
+
+
+<meta name="keywords" content="猫咪,教学,养猫,关系,">
+<meta name="description" content="用于教学铲屎官如何养育猫咪">
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+<script src="/js/index.js"></script>
+
+
+<script src="/js/fancybox.umd.js"></script>
+
+
+<script src="/js/fancybox-images.js"></script>
+
+
+<script src="/js/gitalk.min.js"></script>
+
+
+<script src="/js/hljs.min.js"></script>
+ 
+<script>hljs.highlightAll();</script>
+
+	<meta name="generator" content="Hexo 6.3.0"></head>
+
+	<body>
+		
+	<div class="header">
+		<div class="header-top" id="header-top">
+			<div class="h-left">
+				<a href="/">
+					<img src="/image/logo.png" alt="Quiet">
+				</a>
+			</div>
+			<div class="h-right">
+				<ul>
+					
+						
+								<li>
+									<a href="/">
+										HOME
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/archives">
+										ARCHIVE
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/categories">
+										CATEGORIES
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/tags">
+										TAGS
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/links">
+										LINKS
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/about">
+										ABOUT
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+				</ul>
+			</div>
+			<div class="h-right-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<path fill="none" d="M0 0h24v24H0z" />
+					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+    <div class="topo">
+        <h2>Axi</h2>
+    </div>
+    <ul>
+        
+        <li>
+            <a href="/">HOME</a>
+        </li>
+        
+        <li>
+            <a href="/archives">ARCHIVE</a>
+        </li>
+        
+        <li>
+            <a href="/categories">CATEGORIES</a>
+        </li>
+        
+        <li>
+            <a href="/tags">TAGS</a>
+        </li>
+        
+        <li>
+            <a href="/links">LINKS</a>
+        </li>
+        
+        <li>
+            <a href="/about">ABOUT</a>
+        </li>
+        
+    </ul>
+    <div class="my_foot">
+        
+        <a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">
+            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+        </a>
+        
+    </div>
+</div>
+<div class='shelter'>
+</div>
+<style>
+    .shelter{
+        background-color: #333;
+        opacity:0.5;
+        cursor: pointer;
+        display: none; 
+        position: fixed;
+        left: 0;
+        top: 0; 
+        right: 0;
+        bottom: 0;
+        z-index: 1998;
+    }
+    .sidebar {
+        width: 66%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        background: #fff;
+        z-index: 1999;
+        text-align: center;
+        box-shadow: -6px 0 20px rgba(98, 94, 94, .815);
+    }
+
+    .topo {
+        width: 100%;
+        height: 200px;
+        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end
+    }
+
+    .topo h2 {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        margin: 0 0 10px 10px;
+        font-size: 1.2em;
+        box-sizing: border-box
+    }
+
+    .topo:before {
+        content: '';
+        background-image: url(/image/pattern.png);
+        background-repeat: repeat;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1
+    }
+
+    .sidebar ul {
+        width: 100%;
+        margin-top: 50px
+    }
+
+    .sidebar ul li {
+        height: 50px;
+        list-style: none;
+        font-size: 1.2em;
+        text-align: right;
+        margin-right: 10px
+    }
+
+    .sidebar ul li a {
+        display: grid;
+        color: #5d606a;
+        text-overflow: ellipsis;
+        width: 100%;
+        text-decoration: none
+    }
+
+    .my_foot {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 0
+    }
+
+    .my_foot a {
+        text-decoration: none;
+        margin-right: 10px;
+        display: inline-block
+    }
+
+    .my_foot a img {
+        width: 30px;
+        height: 30px
+    }
+</style>
+
+<script>
+    $( function () {
+	$( '.h-right-close>svg' )
+		.click( function () {
+			$( '.sidebar' )
+				.animate( {
+					right: "0"
+				}, 500 );
+			$( '.shelter' )
+				.fadeIn( "slow" )
+		} );
+	$( '.shelter' )
+		.click( function ( e ) {
+			$( '.sidebar' )
+				.animate( {
+					right: "-100%"
+				}, 500 );
+			$( '.shelter' )
+				.fadeOut( "slow" )
+		} )
+} )
+
+</script>
+
+<div class="post">
+    <div class="post-header-background post-header-img"
+    style="background: url('https://tuapi.eees.cc/api.php?type=302&category=fengjing')" 
+>
+    <div class="post-header-background-content">
+        <ul class="post-header-tag">
+            
+            
+            <li><a href="/tags/猫咪">猫咪</a></li>
+            
+            <li><a href="/tags/教学">教学</a></li>
+            
+            <li><a href="/tags/养猫">养猫</a></li>
+            
+            <li><a href="/tags/关系">关系</a></li>
+            
+            
+        </ul>
+        
+        <h1>科学养猫</h1>
+        <div class="post-header-info">
+            <div class="post-header-info-author">
+                
+                    <svg t="1604839279282" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="2901" width="20" height="20">
+                        <path
+                            d="M513 956.3c-247.7 0-448-200.3-448-448S265.3 66.2 513 66.2s448 200.3 448 448-200.3 442.1-448 442.1z m0-830.9c-212.2 0-388.8 170.7-388.8 388.8C124.2 726.3 294.9 903 513 903c212.2 0 388.8-170.7 388.8-388.8S725.2 125.4 513 125.4z m0 430.2c-94.2 0-170.7-76.5-170.7-170.7S418.8 207.8 513 207.8s170.7 76.5 170.7 170.7S607.2 555.6 513 555.6z m0-289.1c-64.6 0-112 52.8-112 112s47.4 117.9 112 117.9 112-52.8 112-112-47.4-117.9-112-117.9z m0 689.8c-135.7 0-259-58.7-341.9-158.9l-11.8-17.8 11.8-17.8c76.5-117.9 206.2-188.5 347.8-188.5 135.7 0 265 64.6 341.9 182.6l11.8 17.8-11.8 17.8C778 897.1 648.7 956.3 513 956.3zM230.3 773.2C300.9 849.7 406.9 897 513 897c112 0 218.1-47.4 288.6-129.8-70.5-88.2-170.7-135.6-282.7-135.6s-218.1 53.3-288.6 141.6z"
+                            p-id="2902" fill="#ffffff"></path>
+                    </svg>
+                    
+                <span class="post-header-info-author-text"> <a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">Axi</a></span>
+                <div class="post-header-info-author-categories">
+                    
+                         <a href="../../categories/铲屎官课程/" target="_blank" >铲屎官课程</a>
+                    
+                </div>
+                <p>2023-09-12 20:33:36</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="post-content" id="content">
+  
+  <div id="article" class="post-content-info">
+    
+
+    <p>当你与你的猫咪建立深层次的联系时，就像打开了心灵的一扇门。🚪 这个主题让我们探讨如何解锁与你的猫咪更深层次的关系，就像拨开神秘的面纱，发现隐藏在其中的宝藏。💖 在这个猫咪的奇妙旅程中，我们会一同探索如何建立更紧密的纽带，分享美好的时光，以及理解你的毛茸伙伴的感受和需求。🐾</p>
+<h2 id="解锁与你的猫咪更深层次的关系"><a href="#解锁与你的猫咪更深层次的关系" class="headerlink" title="解锁与你的猫咪更深层次的关系"></a>解锁与你的猫咪更深层次的关系</h2><ol>
+<li><p><strong>猫的品种与个性</strong></p>
+<p> 首先，让我们来了解不同品种猫咪的特点。不同的猫品种有着各自独特的性格和需求。例如，波斯猫通常温和、安静，需要更多的护理；而暹罗猫则活泼、好奇，需要更多的活动。了解你的猫的品种特点可以帮助你更好地满足它的需求，建立更紧密的联系。</p>
+</li>
+<li><p><strong>猫的季节需求</strong></p>
+<p> 季节也会对养猫方式产生影响。在寒冷的冬天，猫咪可能更喜欢温暖的环境，而在炎热的夏天，它们可能需要更多的水和遮荫。此外，一些季节性的疾病，如跳蚤和蜱虫感染，在不同的季节可能更容易传播。因此，要根据季节的不同来调整你的猫的养护计划。</p>
+</li>
+<li><p><strong>地区性差异</strong></p>
+<p> 不同地区的气候和环境也会影响养猫方式。例如，在寒冷的地区，你可能需要为你的猫提供更多的室内活动和温暖的庇护所。而在温暖的地区，户外活动和日光浴可能更适合你的猫。此外，不同地区可能存在不同的疾病威胁，因此要咨询兽医以确保你的猫受到充分的保护。</p>
+</li>
+<li><p><strong>饮食与健康</strong></p>
+<p> 养猫的一大关键是提供适当的饮食。猫是肉食动物，所以高质量的猫粮和新鲜的水是必不可少的。要根据你的猫的年龄、体重和活动水平来选择合适的食物。同时，要避免给猫吃人类食物，一些人类食物对猫来说可能是有害的。<br> 此外，定期的兽医检查也是保持猫咪健康的关键。兽医可以帮助你预防疾病、控制寄生虫和提供营养建议。还要确保你的猫及时接种疫苗，以保护它们免受可预防的疾病侵害。</p>
+</li>
+<li><p><strong>提供足够的精神和体能刺激</strong></p>
+<p> 猫咪是好奇心旺盛的动物，它们需要精神和体能的刺激来保持健康和快乐。提供丰富的玩具和活动可以帮助你的猫消耗多余的能量，减少破坏家具的可能性。同时，互动性玩耍也可以增进你与猫咪之间的亲密感情。</p>
+</li>
+<li><p><strong>建立信任与亲密关系</strong></p>
+<p> 最重要的是，与你的猫建立信任与亲密关系。猫是独立的生物，但它们也需要你的关爱和陪伴。花时间与你的猫互动，理解它的需求，尊重它的空间，都有助于建立更深层次的关系。使用积极的强化方法来训练你的猫，而不是惩罚性的方法，以确保你们之间的互动充满爱和理解。</p>
+</li>
+<li><p><strong>社交化与猫咪的幸福</strong></p>
+<p> 社交化是猫咪健康和幸福的关键。从小猫时期开始，让你的猫接触不同的人和动物，帮助它们适应各种环境和情境。社交化有助于减轻猫咪的焦虑和恐惧，使它们更容易融入家庭生活。</p>
+</li>
+<li><p><strong>卫生与整洁</strong></p>
+<p> 保持猫咪的卫生和整洁也非常重要。定期为你的猫梳理毛发，清理猫砂盆，确保猫咪的环境清洁卫生。此外，要定期检查猫咪的耳朵、眼睛、牙齿和爪子，以确保它们没有健康问题。</p>
+</li>
+<li><p><strong>注意猫咪的行为信号</strong></p>
+<p> 了解猫咪的行为信号也是养猫的关键。猫咪通过身体语言和声音来与我们沟通，如果你能够正确理解这些信号，就能更好地满足它们的需求和情感。例如，当猫咪摇尾巴或翘起后背，可能表示它们感到愤怒或害怕，需要你的安慰和支持。</p>
+</li>
+<li><p><strong>耐心与爱</strong><br>最后但同样重要的是，养猫需要耐心和爱。猫咪有时可能会调皮捣蛋，但请记住它们并不是故意想惹你生气。耐心地教育和引导，用爱和关怀对待你的猫，会让它们感到安心和幸福。</p>
+</li>
+</ol>
+<h2 id="喵语小碎念"><a href="#喵语小碎念" class="headerlink" title="喵语小碎念"></a>喵语小碎念</h2><p>养猫是一项需要研究、投入时间和精力的责任，但它也会给你带来无穷的快乐和满足感。通过了解不同品种、季节、地区的养猫方式，提供适当的饮食、刺激和医疗保健，建立信任、亲密关系，社交化，保持卫生，注意行为信号，以及用耐心和爱来对待你的猫，你可以培养出一只快乐、健康、亲近的宠物伴侣。</p>
+<p>希望这些建议能帮助你成为一名更好的猫奴，与你的猫咪建立更深刻的联系，共同享受美好的时光。让我们一起致力于为我们的毛茸茸朋友提供最好的生活！</p>
+
+  </div>
+  <div id=""></div>
+</div>
+
+<script>
+  
+Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
+  dragToClose: true,
+  Toolbar: true,
+  closeButton: "top",
+  Image: {
+    zoom: true,
+  },
+  on: {
+    initCarousel: (fancybox) => {
+      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+    "Carousel.change": (fancybox, carousel, to, from) => {
+      const slide = carousel.slides[to];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+  },
+});
+</script>
+
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 9999;
+        /* width: 600px !important; */
+        min-width: 0%;
+        max-width: 90%;
+        max-height: 80%;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
+
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            max-width: 88%
+        }
+    }
+</style>
+
+    <div class="post-paging">
+    
+    <a href="/2023/09/12/Describe/">
+        <div class="post-paging-last">
+            <span>上一篇</span>
+            <p>猫咪种类</p>
+        </div>
+    </a>
+    
+
+    
+    <a href="/2023/09/12/Establishing/">
+        <div class="post-paging-next">
+            <span>下一篇</span>
+            <p>拯救校园流浪猫</p>
+        </div>
+    </a>
+    
+</div>
+</div>
+		
+<div class="footer">
+	<div class="Copyright">
+		©2023 By Axi. 主题：<a
+			style="text-decoration: none;display: contents; color: #898F9F;"
+			target="_blank" rel="noopener" href="https://github.com/79e/hexo-theme-quiet">Quiet</a>
+	</div>
+	<div class="contact">
+		
+		<a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">
+			<img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+		</a>
+		
+	</div>
+</div>
+
+<script src="/js/gotop.js"></script>
+
+
+<style type="text/css">
+    @media screen and (min-width: 600px) {
+        .goTop>span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            opacity: 0.8;
+            background: rgba(18, 24, 58, 0.06);
+            text-align: center;
+            transition: border .5s;
+            border: 1px solid rgba(18, 24, 58, 0.06);
+
+            -moz-transition: border .5s;
+            /* Firefox 4 */
+            -webkit-transition: border .5s;
+            /* Safari 和 Chrome */
+            -o-transition: border .5s;
+            /* Opera */
+        }
+
+        .goTop>span:hover {
+            border: 1px solid #6680B3;
+        }
+
+
+        .goTop {
+            position: fixed;
+            right: 30px;
+            bottom: 80px;
+        }
+
+        .goTop>span>svg {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .goTop {
+            display: none;
+        }
+    }
+</style>
+<div class="goTop" id="js-go_top">
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g>
+                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
+            </g>
+        </svg>
+    </span>
+</div>
+<script>
+    $( '#js-go_top' )
+	.gotoTop( {
+		offset: 500,
+		speed: 300,
+		animationShow: {
+			'transform': 'translate(0,0)',
+			'transition': 'transform .5s ease-in-out'
+		},
+		animationHide: {
+			'transform': 'translate(100px,0)',
+			'transition': 'transform .5s ease-in-out'
+		}
+	} );
+</script>
+
+
+    <!-- Gitalk -->
+    <script>
+        const data = '{"clientID":"02b3c","clientSecret":"adfc7b4","repo":"gimment","owner":"duneng","admin":"duneng"}'
+        const gitalk = new Gitalk({
+            ...JSON.parse( data),
+            id:location.pathname,
+            distractionFreeMode:false
+        })
+        
+        if(Boolean('false')){
+            gitalk.render('gitalk-container')
+        }
+    </script>
+
+<script>
+	console.log('\n %c Hexo-Quiet 主题 %c https://github.com/79e/hexo-theme-quiet \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;')
+</script>
+	</body>
+</html>
+
