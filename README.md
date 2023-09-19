@@ -1,20 +1,4 @@
 # CatHome.github.io
----
-title: 拯救校园流浪猫
-comments: false
-categories: 公益资助
-aubot: Axi
-aubot_link: 'https://github.com/79E/hexo-theme-quiet'
-tags:
-  - 猫咪
-  - 救助
-  - 流浪猫
-  - 校园
-excerpt: 提供流浪猫捐赠途径
-toc: false
-date: 2023-09-12 20:33:36
-cover: 'https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgQuietView.png'
----
 
 致亲爱的朋友们:
 
