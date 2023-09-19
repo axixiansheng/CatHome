@@ -28,7 +28,7 @@
 ### 
 |联系方式|收款码|
 |---|---|
-|![](https://github.com/axixiansheng/img/blob/main/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg?raw=true)|![收款码](https://github.com/axixiansheng/img/blob/main/%E6%8D%90%E5%8A%A9.jpg?raw=true)|
+|![公众号](https://github.com/axixiansheng/img/blob/main/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg?raw=true)|![收款码](https://github.com/axixiansheng/img/blob/main/%E6%8D%90%E5%8A%A9.jpg?raw=true)|
 
 
 
