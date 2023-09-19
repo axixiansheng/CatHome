@@ -1,4 +1,4 @@
-# cathome.ztcxx.tk
+# 欢迎登录博客cathome.ztcxx.tk并关注公众号
 
 致亲爱的朋友们:
 
